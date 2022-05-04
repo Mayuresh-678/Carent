@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" integrity="sha512-9usAa10IRO0HhonpyAIVpjrylPvoDwiPUiKdWk5t3PyolY1cOd4DSE0Ga+ri4AuTroPR5aQvXU9xC6qOPnzFeg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <title>Agency Portal</title>
+</head>
+<body style="background-image: url('bg/bg1.jpg')">
+    <nav>
+        <div class="logo-name">
+            <img src="bg/bg2.jpg" alt="Logo">
+            <h2>Carent</h2>
+        </div>
+        <div class="btn-box">
+            <a href="../index.html">
+                <input type="button" value="Customer">
+            </a>
+        </div>
+    </nav>
+    <div class="wrapper">
+        <div class="login">
+            <form action="login.php" method="post">
+                <div class="heading">
+                    <h1>Login Portal</h1>
+                    <p>(Agency use only)</p>
+                    <pre> Login credential <br> username : admin@admin <br> password : admin12</pre>
+                </div>
+                <div class="error-text">This is an error message</div>
+                <div class="field input">
+                    <label for="username">Username</label>
+                    <input type="text" name="username" id="username" placeholder="Enter your username" >
+                </div>
+                <div class="field input">
+                    <label for="password">Password</label>
+                    <input type="password" name="password" id="password" placeholder="Enter the password" >
+                    <i class="fa-solid fa-eye"></i>
+                </div>
+                <div class="field button">
+                    <button type="submit" id="login-btn" name="login" >Login</button>
+                </div>
+            </form>
+        </div>
+    </div>
+
+    <script src="js/login.js"></script>
+</body>
+</html>
